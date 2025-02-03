@@ -12,8 +12,8 @@ app.use(bodyParser.json()); // To parse JSON request body
 const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
-    user: "beeba858@gmail.com",
-    pass: "wvgt ldvk qbho yalu", // Use App Password or update this if necessary
+    user: "ishanarora594@gmail.com",
+    pass: "eqbh pres gwux nngq", // Use App Password or update this if necessary
   },
 });
 
@@ -87,7 +87,7 @@ app.post('/mail', (req, res) => {
 
   const mailOptions = {
     from: req.body.email,
-    to: "beeba858@gmail.com",  // Replace with the actual email address
+    to: "ishanarora594@gmail.com",  // Replace with the actual email address
     subject: subject || "New Contact Form Submission",
     text: text || "You have received a new contact form submission.",
     html: emailHtml,
